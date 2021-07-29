@@ -7,7 +7,7 @@ $(document).ready(function () {
       var queryURL;
   
       queryURL =
-        "https://api.openweathermap.org/data/2.5/weather" +
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
         inputCityName +
         "&units=imperial&appid=" +
         APIKey;
@@ -49,7 +49,7 @@ $(document).ready(function () {
   function getUvIndex(latitude, Longitude) {
     var APIKey = "b9a6f5725d6e1dffc535eff717314728";
     var uvIndexUrl =
-      "http://api.openweathermap.org/data/2.5/current.uvi" +
+      "http://api.openweathermap.org/data/2.5/uvi?appid=" +
       APIKey +
       "&lat=" +
       latitude +
